@@ -1,0 +1,15 @@
+@font-face {
+  font-family: "Yeseva One";
+  font-style: normal;
+  font-weight: 400;
+  src: local("YesevaOne"),
+    url("./YesevaOne-Regular.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: "Nunito Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: local("NunitoSans"),
+    url("./NunitoSans.ttf") format("ttf");
+}

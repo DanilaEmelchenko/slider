@@ -1,0 +1,157 @@
+.main {
+  width: 100%;
+  margin: 0 auto;
+  padding: 107px 0 124px;
+}
+
+.container {
+  max-width: 1171px;
+  margin: 0 auto;
+}
+
+.main__inner {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.main__left-block {
+  margin-top: 50px;
+}
+
+.description__heading {
+  font-family: "Yeseva One";
+  font-size: 27px;
+  line-height: 31px;
+  text-transform: uppercase;
+  color: rgb(227, 184, 115);
+  position: relative;
+}
+
+.description__heading::after {
+  content: "";
+  display: block;
+  width: 92px;
+  height: 1px;
+  background-color: rgb(227, 184, 115);
+  top: 45px;
+  left: 180px;
+  position: absolute;
+}
+
+.description__paragraph {
+  margin-top: 34px;
+  line-height: 31px;
+  width: 442px;
+  font-size: 14px;
+}
+
+.info {
+  margin-top: 42px;
+  display: grid;
+  grid-template-columns: 40% 40%;
+  grid-template-rows: 100px 150px;
+}
+
+.info__heading {
+  font-family: 'Yeseva One';
+  font-size: 18px;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: rgb(227, 184, 115);
+}
+
+.info__text {
+  width: 50%;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+.slider__buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 206px;
+  /* margin-top: 80px; */
+}
+
+.slider__button-left,
+.slider__button-right {
+  cursor: pointer;
+}
+
+.slider__button-circles {
+  display: flex;
+  gap: 17px;
+  margin-top: 3px;
+}
+
+.circle {
+  border-radius: 30px;
+  width: 9px;
+  height: 9px;
+  background: rgba(255, 255, 255, 0.3);
+  cursor: pointer;
+}
+
+.slider-options {
+  margin-bottom: 46px;
+  display: flex;
+  gap: 60px;
+  width: 623px;
+}
+
+.slider-option {
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.3);
+  cursor: pointer;
+}
+
+.slider-option:hover {
+  font-family: "Yeseva One";
+  color: rgb(227, 184, 115);
+  transition: 0.5s;
+}
+
+.slider-image {
+  display: none;
+  max-width: 90%;
+  animation: slideIn 1s ease-in-out;
+}
+
+.js-circle-active {
+  background: #fff;
+}
+
+.js-option-active {
+  font-family: "Yeseva One";
+  color: rgb(227, 184, 115);
+  position: relative;
+  transition: 1s;
+}
+
+.js-option-active::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  background: rgb(227, 184, 115);
+  margin-top: 6px;
+  transition: 1s;
+}
+
+.js-image-active {
+  display: block;
+}
+
+@keyframes slideIn {
+  0% {
+    opacity: 0.5;
+    transform: translateX(-5px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
